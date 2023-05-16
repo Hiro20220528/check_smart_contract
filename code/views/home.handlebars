@@ -1,0 +1,28 @@
+<div>
+          <h3>Check Smart Contract</h3>
+</div>
+
+<p class="contract-address">Sample Contract Address: {{sampleAddress}}</p>
+
+
+<form action="/" method="POST">
+          <p>contract address</p>
+          <input type="text" name="code">
+          <button type="submit">verify</button>
+</form>
+
+<div>
+          <p>結果</p>
+          <p>{{text}}</p>
+
+          <p class="result">{{level}}</p>
+          <p>{{analysis}}</p>
+          {{!-- {{{}}}だとpタグの中に入りbrを認識する --}}
+          {{{smartcontract}}}
+          <p id="text"></p>
+
+          
+</div>
+
+
+
