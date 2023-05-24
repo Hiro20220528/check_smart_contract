@@ -6,8 +6,8 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-const security_ai_role = "You are a Solidity programmer and security engineer. Analyze the following code and answer whether you are allowed to access its smart contract, i.e., whether it is secure or insecure.";
-const result_ai_role = "Answer whether the following English sentence is safe or unsafe to say. Answer either {safe} or {unsafe}. If you are not sure, answer {I don't know}. Do not answer otherwise."
+const security_ai_role = "You are a Solidity programmer and security engineer. Analyze the following code and answer whether you are allowed to access its smart contract in Japanese, i.e., whether it is secure or insecure.";
+const result_ai_role = "Answer whether the following sentence is safe or unsafe to say. Answer either {safe} or {unsafe}. If you are not sure, answer {I don't know}. Do not answer otherwise."
 
 async function security_api(contractCode) {
           try {
